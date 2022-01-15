@@ -205,7 +205,7 @@ p {
 
 .grid-container.enterprises {
   background: #F4F4F4;
-  padding-bottom: 7.5rem;
+  padding: 7.5rem 0;
 }
 
 .enterprises .grid-section h2 {
@@ -228,17 +228,93 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .tab-menu a {
   color: #25282A;
 }
 
-.active {
+[data-nav="dark"].active, [data-tab="menu"] li.active {
   background: #25282A;
+  color: #FFF;
   padding: 1.25rem;
 }
 
 .active a {
   color: #FFF;
+}
+
+/* ==================================================================
+	Card
+================================================================== */
+
+.tab-content {
+  grid-column: 1 / 11;
+}
+
+.grid-content.tab-cards {
+  grid-column: 1 / 11;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 3.125rem;
+  gap: 1.25rem;
+}
+
+.card {
+  transform: scale(1);
+  transition: 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-1 {
+  grid-column: 1 / 2;
+}
+
+.card-2 {
+  grid-column: 2 / 3;
+}
+
+.card-3 {
+  grid-column: 3 / 4;
+}
+
+.card-container {
+  padding: 2.5rem .625rem;
+  background: #CCCCCC;
+}
+
+.card-container a {
+  color: #25282A;
+  z-index: 1;
+}
+
+.card-container a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-container h4 {
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: .625rem;
+}
+
+.card-container p {
+  font-size: .75rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.grid-content.tab-cards.active {
+  display: grid;
 }
