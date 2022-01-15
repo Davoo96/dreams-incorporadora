@@ -27,6 +27,10 @@ p {
   margin-bottom: 2.5rem;
 }
 
+.max-42 {
+  max-width: 42px;
+}
+
 /* ==================================================================
 	Header
 ================================================================== */
@@ -370,6 +374,126 @@ p {
   height: 35px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* ==================================================================
+	Contact
+================================================================== */
+
+.grid-container.contact {
+  padding-top: 5rem;
+  padding-bottom: 7.5rem;
+}
+
+.contact {
+  background: #25282A;
+  color: #CCCCCC;
+}
+
+.contact h3 {
+  color: #FC4C02;
+  font-size: 1.25rem;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.information {
+  grid-column: 1 / 6;
+  padding-right: 3rem;
+}
+
+.contact-info {
+  grid-column: 6 / 11;
+}
+
+.adress {
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.adress p {
+  padding-top: 1.875rem;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.phone-email {
+  position: relative;
+  padding: 1.875rem 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.phone-email p {
+  margin-bottom: 1.875rem;
+  margin-left: 2.5rem;
+}
+
+.phone-email a {
+  color: #CCCCCC;
+  margin-left: 2.5rem;
+}
+
+.phone-icon {
+  position: absolute;
+  content: '';
+  background: url(../../assets/images/icons/icon-phone.svg) center/contain no-repeat;
+  width: 28px;
+  height: 28px;
+  left: 0;
+}
+
+.email-icon {
+  position: absolute;
+  content: '';
+  background: url(../../assets/images/icons/icon-email.svg) center/contain no-repeat;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  bottom: 24px;
+}
+
+.fb-ig-in {
+  padding-top: 1.875rem;
+}
+
+.fb-ig-in ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 23px;
+}
+
+.contact-info p {
+  padding-top: 1.875rem;
+}
+
+.contact-form {
+  padding-right: 20px;
+}
+
+#name {
+  margin-right: 1rem;
+}
+
+#name, #email {
+  width: 44%;
+  background: #25282A;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  padding: 1.375rem 0 1.375rem 1rem;
+}
+
+#message {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  background: #25282A;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  padding: 1.375rem 0 1.375rem 1rem;
 }
 
 /* ==================================================================
