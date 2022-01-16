@@ -5,7 +5,7 @@
         <circle cx="21" cy="21" r="21" stroke="none"/>
         <circle cx="21" cy="21" r="20.5" fill="none"/>
       </g>
-      <g id="Instagram" transform="translate(10 10)">
+      <g id="icon-ig-2" data-name="icon-ig" transform="translate(10 10)">
         <path id="Path_83" data-name="Path 83" d="M14.872,20.073H6.2a5.2,5.2,0,0,1-5.2-5.2V6.2A5.2,5.2,0,0,1,6.2,1h8.67a5.2,5.2,0,0,1,5.2,5.2v8.67A5.2,5.2,0,0,1,14.872,20.073ZM6.2,2.734A3.468,3.468,0,0,0,2.734,6.2v8.67A3.468,3.468,0,0,0,6.2,18.34h8.67a3.468,3.468,0,0,0,3.468-3.468V6.2a3.468,3.468,0,0,0-3.468-3.468Z" transform="translate(0 0)" fill="#fff"/>
         <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(5.335 5.335)">
           <path id="Path_84" data-name="Path 84" d="M11.2,16.4a5.2,5.2,0,1,1,5.2-5.2A5.2,5.2,0,0,1,11.2,16.4Zm0-8.67A3.468,3.468,0,1,0,14.67,11.2,3.468,3.468,0,0,0,11.2,7.734Z" transform="translate(-6 -6)" fill="#fff"/>

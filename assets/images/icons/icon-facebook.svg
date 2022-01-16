@@ -5,7 +5,7 @@
         <circle cx="21" cy="21" r="21" stroke="none"/>
         <circle cx="21" cy="21" r="20.5" fill="none"/>
       </g>
-      <path id="_104498_facebook_icon" data-name="104498_facebook_icon" d="M26.845,12.272H23.826v-1.98a.806.806,0,0,1,.84-.917H26.8V6.107L23.863,6.1a3.715,3.715,0,0,0-4,4v2.179H17.982V15.64h1.883v9.53h3.961V15.64H26.5Z" transform="translate(-0.982 4.904)" fill="#fff"/>
+      <path id="icon-facebook-2" data-name="icon-facebook" d="M26.845,12.272H23.826v-1.98a.806.806,0,0,1,.84-.917H26.8V6.107L23.863,6.1a3.715,3.715,0,0,0-4,4v2.179H17.982V15.64h1.883v9.53h3.961V15.64H26.5Z" transform="translate(-0.982 4.904)" fill="#fff"/>
     </g>
   </g>
 </svg>
