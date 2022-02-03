@@ -1,5 +1,5 @@
 export default function initScrollNavAnimation() {
-  const headerNav = document.querySelector('[data-nav="dark"]')
+  const headerNav = document.querySelector('[data-nav="dark"]');
   const sectionOne = document.querySelector('.header-bg');
   
   const sectionOneOptions = {
