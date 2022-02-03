@@ -512,126 +512,51 @@ p {
 }
 
 /* ==================================================================
-	Card
-================================================================== */
-
-.tab-content {
-  grid-column: 1 / 11;
-}
-
-.grid-content.tab-cards {
-  grid-column: 1 / 11;
-  display: none;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 3.125rem;
-  gap: 1.25rem;
-}
-
-.card {
-  position: relative;
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-
-.card-1 {
-  grid-column: 1 / 2;
-}
-
-.card-2 {
-  grid-column: 2 / 3;
-}
-
-.card-3 {
-  grid-column: 3 / 4;
-}
-
-.card-container {
-  position: absolute;
-  padding: 7.625rem .625rem;
-  background: #25282A;
-  color: #FFF;
-  opacity: .8;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  z-index: 1;
-}
-
-.card-container a {
-  z-index: 1;
-  transition: .1s ease-in;
-}
-
-.card-container h4 {
-  font-weight: bold;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: .625rem;
-}
-
-.card-container p {
-  font-size: .75rem;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
-
-.grid-content.tab-cards.active {
-  display: grid;
-}
-
-.card-active .card-container {
-  display: block;
-}
-
-.card-active .card-container a {
-  color: #FFF;
-}
-
-.card-container a .plus-icon:hover {
-  background: url(../images/icons/icon-plus-orange.svg) center/contain no-repeat;
-}
-
-.plus-icon {
-  position: absolute;
-  content: '';
-  background: url(../../assets/images/icons/icon-plus.svg) center/contain no-repeat;
-  width: 35px;
-  height: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: .3s ease;
-}
-
-/* ==================================================================
 	Contact
 ================================================================== */
 
 .grid-container.contact {
-  padding-top: 5rem;
+  padding-top: 20rem;
   padding-bottom: 7.5rem;
 }
 
-.contact {
-  background: #25282A;
-  color: #CCCCCC;
+.contact-text {
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 15.6rem !important;
+  font-weight: bold;
+  color: #fff;
+  top: -280px;
+  left: calc(50% - 655px);
+  line-height: 1;
+  text-shadow: -1px -1px 0 #25282A,
+    1px -1px 0 #25282A,
+    -1px 1px 0 #252525,
+    1px 1px 0 #25282A;
 }
 
 .contact h3 {
-  color: #FC4C02;
-  font-size: 1.25rem;
+  position: relative;
+  color: #25282A;
+  font-size: 2.75rem;
+}
+
+.contact h3::before {
+  content: '';
+  position: absolute;
+  width: 76px;
+  border: 1px solid #FC4C02;
+  bottom: -10px;
+  left: 0;
 }
 
 .contact p {
   font-size: 1rem;
+}
+
+.ico-contact {
+  max-width: 267px;
 }
 
 .information {
@@ -644,30 +569,26 @@ p {
 }
 
 .adress {
-  padding-bottom: 1.875rem;
-  border-bottom: 1px solid #CCCCCC;
+  padding-top: 2rem;
 }
 
 .adress p {
-  padding-top: 1.875rem;
+  padding-top: 2.8rem;
   line-height: 32px;
   margin-bottom: 0;
 }
 
 .phone-email {
   position: relative;
-  padding: 1.875rem 0;
-  border-bottom: 1px solid #CCCCCC;
+  padding-top: 2.8rem;
 }
 
 .phone-email p {
-  margin-bottom: 1.875rem;
-  margin-left: 2.5rem;
+  margin-bottom: 2.8rem;
 }
 
 .email {
-  color: #CCCCCC;
-  margin-left: 2.5rem;
+  color: #FC4C02;
   text-decoration: underline;
 }
 
@@ -681,7 +602,7 @@ p {
 }
 
 .email:hover {
-  color: #FC4C02;
+  font-weight: bold;
 }
 
 .email-icon {
@@ -744,49 +665,53 @@ p {
 }
 
 .contact-info p {
-  padding-top: 1.875rem;
+  padding-top: 2rem;
 }
 
 .contact-form {
   padding-right: 20px;
+  border: none;
 }
 
-#name {
-  margin-right: 1rem;
+input, textarea {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #25282A;
+}
+
+#name, #email, #message {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  color: #25282A;
 }
 
 #name, #email {
-  font-family: 'Montserrat', sans-serif;
-  width: 44%;
-  background: #25282A;
-  color: #CCCCCC;
-  border: 1px solid #CCCCCC;
-  padding: 1.375rem 0 1.375rem 1rem;
+  padding-bottom: .8rem;
 }
 
-#message {
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 1rem;
-  display: block;
-  width: 96%;
-  background: #25282A;
-  color: #CCCCCC;
-  border: 1px solid #CCCCCC;
-  padding: 1.375rem 0 1.375rem 1rem;
+#name {
+  padding-top: 3.1rem;
+}
+
+#email, #message {
+  padding-top: 2.2rem;
 }
 
 .btn-send {
-  background: #25282A;
-  color: #CCCCCC;
-  margin-top: 1rem;
-  padding: .75rem 1.625rem;
-  border: 1px solid #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #25282A;
+  margin-top: 3.75rem;
+  padding: 1.25rem 3.75rem;
+  border: 1px solid #25282A;
   cursor: pointer;
 }
 
 .btn-send:hover {
-  background: #FC4C02;
-  border: 1px solid #FC4C02;
+  color: #fff;
+  background: #25282A;
+  border: 1px solid #25282A;
 }
 
 /* ==================================================================
