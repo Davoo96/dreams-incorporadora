@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-  <g id="icon-fb-orange" transform="translate(-449 -4167)">
-    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(449 4167)" fill="#fff" stroke="#fff" stroke-width="1">
-      <circle cx="21" cy="21" r="21" stroke="none"/>
-      <circle cx="21" cy="21" r="20.5" fill="none"/>
-    </g>
-    <path id="_104498_facebook_icon" data-name="104498_facebook_icon" d="M26.845,12.272H23.826v-1.98a.806.806,0,0,1,.84-.917H26.8V6.107L23.863,6.1a3.715,3.715,0,0,0-4,4v2.179H17.982V15.64h1.883v9.53h3.961V15.64H26.5Z" transform="translate(448.018 4171.904)" fill="#fc4c02"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="8.863" height="19.073" viewBox="0 0 8.863 19.073"><path d="M26.845,12.272H23.826v-1.98a.806.806,0,0,1,.84-.917H26.8V6.107L23.863,6.1a3.715,3.715,0,0,0-4,4v2.179H17.982V15.64h1.883v9.53h3.961V15.64H26.5Z" transform="translate(-17.982 -6.096)" fill="#fc4c02"/></svg>
