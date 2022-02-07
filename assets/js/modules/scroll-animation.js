@@ -2,7 +2,7 @@ export default function initScrollAnimation() {
   const scrollItems = document.querySelectorAll('[data-scroll="animation"]');
 
   if (scrollItems.length) {
-    const windowScroll = window.innerHeight * 1.1;
+    const windowScroll = window.innerHeight * 0.6;
   
     function scrollAnimation() {
       scrollItems.forEach((item) => {
@@ -11,8 +11,6 @@ export default function initScrollAnimation() {
         if (isItemVisible) {
           const direction = item.dataset.animate;
           item.classList.add('active', direction);
-        } else if (item.classList.contains('active')) {
-          item.classList.remove('active');
         }
       });
     }
