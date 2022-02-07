@@ -2,7 +2,7 @@ export default function initScrollAnimation() {
   const scrollItems = document.querySelectorAll('[data-scroll="animation"]');
 
   if (scrollItems.length) {
-    const windowScroll = window.innerHeight * 0.9;
+    const windowScroll = window.innerHeight * 1.1;
   
     function scrollAnimation() {
       scrollItems.forEach((item) => {
