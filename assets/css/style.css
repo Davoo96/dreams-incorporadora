@@ -639,10 +639,6 @@ p {
   cursor: pointer;
 }
 
-svg path:hover {
-  fill: #FC4C02;
-}
-
 .contact-info p {
   padding-top: 2rem;
 }
