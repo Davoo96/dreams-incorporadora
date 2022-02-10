@@ -626,45 +626,21 @@ p {
 .fb-ig-in ul {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .fb-ig-in ul li {
   transition: .3s ease;
 }
 
-.facebook {
-  background: url(../images/icons/icon-facebook.svg) center no-repeat;
-  width: 42px;
-  height: 43px;
-}
-
 .instagram {
-  background: url(../images/icons/icon-ig.svg) center no-repeat;
-  width: 42px;
-  height: 43px;
-}
-
-.linkedin {
-  background: url(../images/icons/icon-linkedin.svg) center no-repeat;
-  width: 42px;
-  height: 43px;
-}
-
-.facebook:hover {
-  background: url(../images/icons/icon-fb-orange.svg) center no-repeat;
   cursor: pointer;
 }
 
-.instagram:hover {
-  background: url(../images/icons/icon-ig-orange.svg) center no-repeat;
-  cursor: pointer;
-}
-
-.linkedin:hover {
-  background: url(../images/icons/icon-linkedin-orange.svg) center no-repeat;
-  cursor: pointer;
+svg path:hover {
+  fill: #FC4C02;
 }
 
 .contact-info p {
@@ -682,14 +658,14 @@ input, textarea {
   border-color: #25282A;
 }
 
-#name, #email, #message {
+#name, #email, #tel, #message {
   font-family: 'Montserrat', sans-serif;
   display: block;
   width: 100%;
   color: #25282A;
 }
 
-#name, #email {
+#name, #email, #tel {
   padding-bottom: .8rem;
 }
 
@@ -697,7 +673,7 @@ input, textarea {
   padding-top: 3.1rem;
 }
 
-#email, #message {
+#email, #tel, #message {
   padding-top: 2.2rem;
 }
 
