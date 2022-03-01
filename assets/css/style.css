@@ -433,6 +433,7 @@ p {
   font-weight: 600;
   color: #fff;
   text-shadow: -1px -1px 0 #25282A, 1px -1px 0 #25282A, -1px 1px 0 #25282A, 1px 1px 0 #25282A;
+  opacity: .5;
 }
 
 .slide-text {
@@ -442,8 +443,12 @@ p {
   max-width: 230px;
 }
 
+.slide-title {
+  min-width: 393px;
+}
+
 .slide-title h2 {
-  font-size: 3.75rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #fff;
 }
@@ -849,6 +854,182 @@ input, textarea {
 /* ==================================================================
 	Media Queries
 ================================================================== */
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.13rem;
+  }
+
+  .header-content h1 {
+    font-size: 2.65rem;
+  }
+
+  .grid-container.about {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 6rem;
+  }
+
+  .about-box {
+    left: calc(50% - 350px);
+    top: 65px;
+  }
+
+  .about-text {
+    font-size: 8rem;
+  }
+
+  .about-us {
+    margin-left: 6rem;
+    margin-bottom: 8rem;
+  }
+
+  .about .grid-content {
+    grid-column: 1 / 3;
+    padding-bottom: 2rem;
+  }
+
+  .btn-about {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .img-1 {
+    grid-column: 2 / 3;
+    grid-row: unset;
+    padding: 4rem .5rem 0;
+  }
+
+  .img-2 {
+    grid-column: 1 / 2;
+    grid-row: unset;
+    padding: 0 .5rem;
+  }
+
+  .featured {
+    background: url(../images/pictures/bkg-featured-tablet.svg) center no-repeat;
+  }
+
+  .grid-container {
+    padding-top: 12.5rem;
+  }
+
+  .featured .grid-section p {
+    padding-bottom: 10rem;
+  }
+
+  .bkg-text {
+    font-size: 6rem;
+    padding-top: 7rem;
+  }
+
+  .facts-bkg {
+    right: calc(50% - 350px);
+  }
+
+  .facts-title {
+    padding-left: 8rem;
+  }
+
+  .facts-title::before {
+    left: 17px;
+  }
+
+  .fact-box-title::before {
+    left: 33px;
+    top: 35px;
+  }
+
+  .fact-box-right, .fact-box-left {
+    padding: 3rem 2rem;
+  }
+
+  .enterprises-text {
+    font-size: 8rem;
+    left: calc(50% - 350px);
+  }
+
+  .grid-container.enterprises {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slide-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 15rem 0;
+  }
+
+  .number {
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 10rem;
+  }
+
+  .slide-text {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 330px;
+    margin-bottom: 0;
+  }
+
+  .slide-title {
+    grid-column: 1 / 3;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .slide-title h2 {
+    text-align: center;
+  }
+
+  .slide-button {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .slideshow-bg.slideshow-1 {
+    background: url(../images/pictures/slideshow-fke-tablet-01.png) center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .slideshow-bg.slideshow-2 {
+    background: url(../images/pictures/slideshow-fke-tablet-02.png) center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .slideshow-bg.slideshow-3 {
+    background: url(../images/pictures/slideshow-fke-tablet-03.png) center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .grid-container.contact {
+    padding-top: 16rem;
+  }
+
+  .contact .grid-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .information {
+    grid-column: 1 / 3;
+  }
+
+  .contact-info {
+    grid-column: 1 / 3;
+    padding-top: 4rem;
+  }
+
+  .contact-text {
+    font-size: 8.5rem !important;
+    left: calc(50% - 350px);
+    top: -235px;
+  }
+}
 
 @media (max-width: 1100px) {
   .grid-container, .footer-box {
