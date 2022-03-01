@@ -441,6 +441,7 @@ p {
   color: #fff;
   line-height: 1.6;
   max-width: 230px;
+  margin-bottom: 0;
 }
 
 .slide-title {
@@ -855,6 +856,39 @@ input, textarea {
 	Media Queries
 ================================================================== */
 
+@media (max-width: 1100px) {
+  .grid-container, .footer-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 931px) {
+  .grid-content.tab-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-1, .card-2, .card-3 {
+    grid-column: 1;
+  }
+
+  .card {
+    padding: 5rem 3rem;
+  }
+
+  .card-container {
+    margin: 5rem 3rem;
+  }
+
+  #name {
+    margin-bottom: 1rem;
+  }
+
+  #name, #email {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   p {
     font-size: 1.13rem;
@@ -974,7 +1008,6 @@ input, textarea {
     align-self: center;
     justify-self: center;
     max-width: 330px;
-    margin-bottom: 0;
   }
 
   .slide-title {
@@ -1031,35 +1064,80 @@ input, textarea {
   }
 }
 
-@media (max-width: 1100px) {
-  .grid-container, .footer-box {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
+@media (max-width: 600px) {
 
-@media (max-width: 931px) {
-  .grid-content.tab-cards {
-    grid-template-columns: 1fr;
+  .header-content {
+    padding-top: 20rem;
   }
 
-  .card-1, .card-2, .card-3 {
-    grid-column: 1;
+  .btn-header {
+    font-size: 1rem;
+    padding: .5rem;
+    width: 170px;
   }
 
-  .card {
-    padding: 5rem 3rem;
+  .about-text {
+    font-size: 4.5rem;
+    width: 286px;
   }
 
-  .card-container {
-    margin: 5rem 3rem;
+  .about-box {
+    left: calc(50% - 135px);
   }
 
-  #name {
-    margin-bottom: 1rem;
+  .about-us {
+    margin-bottom: 4rem;
   }
 
-  #name, #email {
-    width: 96%;
+  .about .grid-content {
+    padding-top: 8rem;
+  }
+
+  .btn-about {
+    width: 226px;
+    padding: .5rem;
+  }
+
+  .img-1, .img-2, .fact-box-left, .fact-box-right, .number, .slide-text, .slide-title {
+    grid-column: 1 / 3;
+  }
+
+  .grid-container.featured {
+    padding: 2.5rem 0;
+    margin: 4rem 15px;
+  }
+
+  .featured {
+    background: none;
+    border: solid 1px #FC4C02;
+  }
+
+  .featured .grid-section p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .bkg-text {
+    font-size: 2.5rem;
+    width: 286px;
+  }
+
+  .facts-bkg {
+    right: calc(50% - 545px);
+  }
+
+  .enterprises-text {
+    font-size: 3.5rem;
+    left: calc(50% - 164px);
+    top: 170px;
+  }
+
+  .slide-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-text {
+    font-size: 3.5rem !important;
+    left: calc(50% - 160px);
   }
 }
