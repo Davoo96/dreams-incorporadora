@@ -1083,6 +1083,7 @@ input, textarea {
 
   .about-box {
     left: calc(50% - 135px);
+    width: 300px;
   }
 
   .about-us {
@@ -1123,7 +1124,8 @@ input, textarea {
   }
 
   .facts-bkg {
-    right: calc(50% - 545px);
+    right: calc(50% - 109px);
+    width: 300px;
   }
 
   .enterprises-text {
@@ -1139,5 +1141,20 @@ input, textarea {
   .contact-text {
     font-size: 3.5rem !important;
     left: calc(50% - 160px);
+  }
+
+  [data-scroll="animation"] {
+    opacity: 1;
+    transition: 2s;
+    transform: translate3d(0, 0, 0);
+  }
+
+  [data-scroll="animation"].active, [data-scroll="animation"].active.down, [data-scroll="animation"].active.up, [data-scroll="animation"].active.left, [data-scroll="animation"].active.right {
+    animation: none;
+  }
+
+  [data-nav="dark"], [data-tab="menu"] li {
+    background: #25282A;
+    color: #FFF;
   }
 }
