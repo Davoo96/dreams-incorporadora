@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -128,9 +129,8 @@ p {
 .btn-header {
   position: absolute;
   background: #FC4C02;
-  border: 1px solid #FFF;
-  opacity: 0.7;
-  color: #FFF;
+  border: 1px solid #FC4C02;
+  color: #fff;
   font-family: 'Montserrat';
   font-size: 1.25rem;
   font-weight: 400;
@@ -140,6 +140,7 @@ p {
   transform: translateX(-50%);
   cursor: pointer;
   transition: .3s ease;
+  opacity: .7;
 }
 
 .btn-header:hover {
@@ -173,6 +174,10 @@ p {
   background: #fff;
   grid-template-columns: repeat(15, 1fr);
   padding-top: 19rem;
+}
+
+.about .grid-content {
+  position: realative;
 }
 
 .about-us {
@@ -233,6 +238,7 @@ p {
 }
 
 .btn-about {
+  position: absolute;
   border: 1px solid #25282A;
   background: #fff;
   color: #25282A;
@@ -343,14 +349,32 @@ p {
 .fact-box-title::before {
   content: '';
   position: absolute;
-  background: url(../images/icons/ico-star.svg) center no-repeat;
-  background-color: #FC4C02;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   left: 63px;
   top: 80px;
-  transition: .3s ease;
+  transition: .3s ease-in-out;
+}
+
+.fact-box-title.security::before {
+  background: url(../images/icons/ico-seguranca.svg) center no-repeat;
+  background-color: #FC4C02;
+}
+
+.fact-box-title.efficiency::before {
+  background: url(../images/icons/ico-eficiencia.svg) center no-repeat;
+  background-color: #FC4C02;
+}
+
+.fact-box-title.planning::before {
+  background: url(../images/icons/ico-planejamento.svg) center no-repeat;
+  background-color: #FC4C02;
+}
+
+.fact-box-title.quality::before {
+  background: url(../images/icons/ico-qualidade.svg) center no-repeat;
+  background-color: #FC4C02;
 }
 
 .fact-box-left p, .fact-box-right p {
@@ -362,8 +386,23 @@ p {
   background: #FC4C02;
 }
 
-.fact-box-left:hover .fact-box-title::before, .fact-box-right:hover .fact-box-title::before {
-  background: url(../images/icons/ico-star-orange.svg) center no-repeat;
+.fact-box-left:hover .fact-box-title.security::before {
+  background: url(../images/icons/ico-seguranca-orange.svg) center no-repeat;
+  background-color: #fff;
+}
+
+.fact-box-right:hover .fact-box-title.efficiency::before {
+  background: url(../images/icons/ico-eficiencia-orange.svg) center no-repeat;
+  background-color: #fff;
+}
+
+.fact-box-left:hover .fact-box-title.planning::before {
+  background: url(../images/icons/ico-planejamento-orange.svg) center no-repeat;
+  background-color: #fff;
+}
+
+.fact-box-right:hover .fact-box-title.quality::before {
+  background: url(../images/icons/ico-qualidade-orange.svg) center no-repeat;
   background-color: #fff;
 }
 
@@ -395,19 +434,19 @@ p {
 
 .slideshow-bg.slideshow-1 {
   grid-column: 1 / 4;
-  background: url(../images/pictures/slideshow-fke01.png) center no-repeat;
+  background: url(../images/pictures/pht-03.png) center no-repeat;
   background-size: 100% 100%;
 }
 
 .slideshow-bg.slideshow-2 {
   grid-column: 1 / 4;
-  background: url(../images/pictures/slideshow-fke02.png) center no-repeat;
+  background: url(../images/pictures/pht-04.png) center no-repeat;
   background-size: 100% 100%;
 }
 
 .slideshow-bg.slideshow-3 {
   grid-column: 1 / 4;
-  background: url(../images/pictures/slideshow-fke03.png) center no-repeat;
+  background: url(../images/pictures/pht-06.png) center no-repeat;
   background-size: 100% 100%;
 }
 
@@ -421,10 +460,8 @@ p {
 }
 
 .slide-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column: 2 / 3;
 }
 
@@ -440,18 +477,24 @@ p {
   font-size: 1rem;
   color: #fff;
   line-height: 1.6;
-  max-width: 230px;
   margin-bottom: 0;
+}
+
+.slide-text.mb-58 {
+  margin-bottom: 3.75rem;
 }
 
 .slide-title {
   min-width: 393px;
+  grid-column: 1 / 3;
+  margin: auto 0;
 }
 
 .slide-title h2 {
   font-size: 4rem;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 3.75rem;
 }
 
 .slide-button {
@@ -853,6 +896,69 @@ input, textarea {
 }
 
 /* ==================================================================
+	Quem Somos
+================================================================== */
+
+.quem-somos .header {
+  background: #1F2224;
+}
+
+.quem-somos .grid-section {
+  grid-template-columns: 1fr minmax(300px, 1024px) 1fr;
+}
+
+.quem-somos .introduction {
+  background: #25282A;
+}
+
+.quem-somos .introduction .grid-content {
+  color: #fff;
+  padding-top: 15rem;
+  padding-bottom: 23rem;
+  grid-column: 2 / 3;
+  position: relative;
+}
+
+.about-us-title {
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  color: #25282A;
+  text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+}
+
+.quem-somos .about-us {
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+}
+
+.quem-somos .about-us::before {
+  border: 1px solid #fff;
+}
+
+.arrow-down {
+  position: absolute;
+  max-width: 47px;
+  height: 50px;
+  left: -60px;
+  bottom: 40px;
+}
+
+.intro-img {
+  position: absolute;
+}
+
+.dream-house.grid-content {
+  padding-top: 23rem;
+  grid-column: 2 / 3;
+}
+
+.dream-house {
+  display: flex;
+}
+
+/* ==================================================================
 	Media Queries
 ================================================================== */
 
@@ -919,7 +1025,7 @@ input, textarea {
 
   .about .grid-content {
     grid-column: 1 / 3;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
 
   .btn-about {
@@ -982,6 +1088,7 @@ input, textarea {
   .enterprises-text {
     font-size: 8rem;
     left: calc(50% - 350px);
+    top: 55px;
   }
 
   .grid-container.enterprises {
@@ -992,7 +1099,6 @@ input, textarea {
   .slide-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
     padding: 15rem 0;
   }
 
@@ -1099,7 +1205,7 @@ input, textarea {
     padding: .5rem;
   }
 
-  .img-1, .img-2, .fact-box-left, .fact-box-right, .number, .slide-text, .slide-title {
+  .img-1, .img-2, .fact-box-left, .fact-box-right {
     grid-column: 1 / 3;
   }
 
@@ -1124,23 +1230,64 @@ input, textarea {
   }
 
   .facts-bkg {
-    right: calc(50% - 109px);
+    right: calc(50% - 150px);
     width: 300px;
+  }
+
+  .grid-container.enterprises {
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
   }
 
   .enterprises-text {
     font-size: 3.5rem;
     left: calc(50% - 164px);
-    top: 170px;
+    top: 55px;
+  }
+
+  .slide-item {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .slide-title {
+    display: block;
+    position: relative;
+    padding: 0 15px;
+  }
+
+  .slide-title h2, .slide-text {
+    display: inline-block;
+  }
+
+  .slide-button {
+    position: absolute;
+    left: calc(50% - 7px);
+    margin: 0;
+    bottom: -50px;
   }
 
   .slide-title h2 {
     font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .grid-container.contact {
+    padding-top: 6.5rem;
   }
 
   .contact-text {
     font-size: 3.5rem !important;
     left: calc(50% - 160px);
+    top: -80px;
+  }
+
+  .copyright p {
+    width: 130px;
+  }
+
+  .menu-list {
+    display: none;
   }
 
   [data-scroll="animation"] {
