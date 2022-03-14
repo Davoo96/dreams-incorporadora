@@ -3,7 +3,7 @@ export default function initScrollNavAnimation() {
   const sectionOne = document.querySelector('.header-bg');
   
   const sectionOneOptions = {
-    rootMargin: "-900px 0px 0px 0px"
+    rootMargin: "-650px 0px 0px 0px"
   };
   
   const sectionOneObserver = new IntersectionObserver((entries) => {

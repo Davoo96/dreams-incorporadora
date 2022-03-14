@@ -1062,6 +1062,7 @@ input, textarea {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 2.8rem;
+  line-height: 1;
   color: #fff;
   top: 50%;
   left: 50%;
@@ -1315,6 +1316,12 @@ input, textarea {
 
   #name, #email {
     width: 100%;
+  }
+}
+
+@media (max-height: 861px) {
+  .project-title .arrow-down {
+    top: 80%;
   }
 }
 
@@ -1718,11 +1725,11 @@ input, textarea {
   }
 
   .project {
-    background: linear-gradient(180deg, #25282A 40%, #FFF 60%);
+    background: linear-gradient(180deg, #25282A 40%, #FFF 40%);
   }
 
   .details-container {
-    padding-top: 10rem;
+    padding-top: 25rem;
   }
 
   .blueprint h2 {
