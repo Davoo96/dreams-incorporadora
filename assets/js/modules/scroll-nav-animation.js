@@ -3,10 +3,10 @@ export default function initScrollNavAnimation() {
   const sectionOne = document.querySelector('.header-bg');
   
   const sectionOneOptions = {
-    rootMargin: "-300px 0px 0px 0px"
+    rootMargin: "-900px 0px 0px 0px"
   };
   
-  const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver) => {
+  const sectionOneObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if(!entry.isIntersecting) {
         headerNav.classList.add('active');

@@ -558,20 +558,21 @@ p {
   padding: 1.25rem 3rem;
 }
 
-[data-nav="dark"].active, [data-tab="menu"] li.active {
+[data-nav="dark"].active {
   background: #1F2224;
   color: #FFF;
 }
 
-[data-tab="menu"] li.active::before {
-  position: absolute;
-  content: '';
-  width: 121px;
-  height: 4px;
-  bottom: -22.5px;
-  left: 50%;
-  transform: translateX(-50%);
+[data-tab="menu"] li.active {
   background: #FC4C02;
+}
+
+[data-tab="content"] section {
+  display: none;
+}
+
+[data-tab="content"] section.active {
+  display: block;
 }
 
 /* ==================================================================
@@ -919,11 +920,11 @@ input, textarea {
 	Quem Somos
 ================================================================== */
 
-.quem-somos .header, .novo-residence .header {
+.quem-somos .header {
   background: #1F2224;
 }
 
-.quem-somos .grid-section, .novo-residence .grid-section {
+.quem-somos .grid-section, .novo-residence .grid-section, .jabuticabeira .grid-section, .view .grid-section {
   grid-template-columns: 1fr minmax(300px, 1024px) 1fr;
 }
 
@@ -1105,18 +1106,18 @@ input, textarea {
   margin-bottom: 5rem;
 }
 
-.values-box {
+.values-box, .details-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 3.2rem;
 }
 
-.value-item {
+.value-item, .detail-item {
   place-self: center;
   max-width: 200px;
 }
 
-.value-item p {
+.value-item p, .detail-item p {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 4.75rem;
@@ -1164,7 +1165,7 @@ input, textarea {
 }
 
 .project-introduction {
-  padding: 7.5rem 0;
+  padding: 10.5rem 0;
 }
 
 .project-introduction h3 {
@@ -1172,6 +1173,112 @@ input, textarea {
   font-size: 3.9rem;
   text-transform: uppercase;
   margin-bottom: 3.4rem;
+}
+
+.project {
+  background: linear-gradient(180deg, #25282A 50%, #FFF 50%);
+}
+
+.project-info {
+  grid-column: 2 / 3;
+  padding-top: 4.375rem;
+}
+
+.project-img {
+  max-width: 953px;
+  margin-left: auto;
+}
+
+.project-img-mobile {
+  display: none;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 4.375rem;
+}
+
+.project-list li {
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 1.5rem 8rem;
+  cursor: pointer;
+}
+
+.project-description {
+  position: relative;
+}
+
+.project-description h2 {
+  font-size: 11.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #25282A;
+  text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+}
+
+.project-description .arrow-down {
+  top: 35%;
+  left: 0
+}
+
+.details-container {
+  padding-top: 7.5rem;
+}
+
+.detail-item .img-container {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 24px;
+}
+
+.detail-img {
+  height: 75px;
+}
+
+.blueprint {
+  background: #25282A;
+}
+
+.blueprint-content {
+  padding-top: 4rem;
+  grid-column: 2 / 3;
+  padding-bottom: 10.5rem;
+}
+
+.blueprint h2 {
+  font-size: 8.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #25282A;
+  text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+}
+
+.blueprint-img-mobile {
+  display: none;
+}
+
+/* ==================================================================
+	Jabuticabeira
+================================================================== */
+
+.jabuticabeira .project-title {
+  background: url(../images/pictures/pht-19.png) center no-repeat;
+}
+
+/* ==================================================================
+	Jabuticabeira
+================================================================== */
+
+.view .project-title {
+  background: url(../images/pictures/pht-20.png) center no-repeat;
 }
 
 /* ==================================================================
@@ -1545,17 +1652,17 @@ input, textarea {
     font-size: 1.75rem;
   }
 
-  .values-box {
+  .values-box, .details-container {
     grid-template-columns: 1fr 1fr;
   }
 
-  .intro-img-mobile {
+  .intro-img-mobile, .project-img-mobile {
     position: absolute;
     max-width: 330px;
     display: block;
   }
 
-  .intro-img {
+  .intro-img, .project-img {
     display: none;
   }
 
@@ -1574,6 +1681,68 @@ input, textarea {
 
   .grid-content.services {
     padding-top: 0;
+  }
+
+  .project-title h2 {
+    font-size: 2.9rem;
+  }
+
+  .project-introduction h3 {
+    font-size: 2rem;
+  }
+
+  .project-description h2 {
+    font-size: 4.25rem;
+  }
+
+  .project-list {
+    justify-content: space-evenly;
+  }
+
+  .novo-residence .grid-section, .jabuticabeira .grid-section, .view .grid-section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .novo-residence .project-title {
+    background: url(../images/pictures/mobile-05.png) center no-repeat;
+  }
+
+  .project-introduction {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .project-list li {
+    margin-bottom: 1rem;
+  }
+
+  .project {
+    background: linear-gradient(180deg, #25282A 40%, #FFF 60%);
+  }
+
+  .details-container {
+    padding-top: 10rem;
+  }
+
+  .blueprint h2 {
+    font-size: 4.5rem;
+  }
+
+  .blueprint-img {
+    display: none;
+  }
+
+  .blueprint-img-mobile {
+    display: block;
+  }
+
+  .jabuticabeira .project-title {
+    background: url(../images/pictures/mobile-15.png) center no-repeat;
+  }
+
+  .view .project-title {
+    background: url(../images/pictures/mobile-12.png) center no-repeat;
   }
 
   [data-scroll="animation"] {
