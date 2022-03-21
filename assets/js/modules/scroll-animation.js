@@ -11,8 +11,6 @@ export default function initScrollAnimation() {
         if (isItemVisible) {
           const direction = item.dataset.animate;
           item.classList.add('active', direction);
-        } else if (item.classList.contains('active')) {
-          item.classList.remove('active');
         }
       });
     }
