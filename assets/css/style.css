@@ -1841,12 +1841,6 @@ input, textarea {
     left: 0;
   }
 
-  [data-scroll="animation"] {
-    opacity: 1;
-    transition: 2s;
-    transform: translate3d(0, 0, 0);
-  }
-
   [data-nav="dark"], [data-tab="menu"] li {
     background: #25282A;
     color: #FFF;
