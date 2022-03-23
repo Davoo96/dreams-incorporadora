@@ -928,8 +928,8 @@ input, textarea {
 	Quem Somos
 ================================================================== */
 
-.quem-somos .header {
-  background: #1F2224;
+.quem-somos .header-bg {
+  height: unset;
 }
 
 .quem-somos .grid-section, .novo-residence .grid-section, .jabuticabeira .grid-section, .view .grid-section {
@@ -1127,6 +1127,7 @@ input, textarea {
 }
 
 .value-item p, .detail-item p {
+  text-transform: uppercase;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 4.75rem;
@@ -1148,10 +1149,6 @@ input, textarea {
 /* ==================================================================
 	Novo Residence
 ================================================================== */
-
-.novo-residence .header-bg::before {
-  display: none;
-}
 
 .project-title {
   background: url(../images/pictures/pht-11.png) center no-repeat;
@@ -1226,13 +1223,15 @@ input, textarea {
 }
 
 .project-description h2 {
-  font-size: 11.5rem;
+  position: absolute;
+  top: 13rem;
+  font-size: 6.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: bold;
   line-height: 1;
-  color: #25282A;
-  text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+  color: #fff;
+  text-shadow: -1px -1px 0 #25282A, 1px -1px 0 #25282A, -1px 1px 0 #25282A, 1px 1px 0 #25282A;
 }
 
 .project-description .arrow-down {
@@ -1241,7 +1240,8 @@ input, textarea {
 }
 
 .details-container {
-  padding-top: 13.5rem;
+  position: relative;
+  padding-top: 22.5rem;
 }
 
 .detail-item .img-container {
@@ -1271,6 +1271,7 @@ input, textarea {
   font-weight: bold;
   line-height: 1;
   color: #25282A;
+  text-align: center;
   text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
 }
 
@@ -1280,6 +1281,20 @@ input, textarea {
 
 .map {
   grid-column: 1 / 4;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 600px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 600px;
+  width: 100%;
 }
 
 /* ==================================================================
@@ -1302,8 +1317,8 @@ input, textarea {
 	Carousel
 ================================================================== */
 
-.carousel-img {
-  padding-bottom: 4rem;
+.carousel-item img {
+  max-height: 660px;
 }
 
 .carousel-control-next {
@@ -1312,6 +1327,25 @@ input, textarea {
 
 .carousel-control-prev {
   left: -110px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, .6);
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-control-next-icon {
+  background: url(../images/icons/ico-arrow-right.svg) center no-repeat;
+}
+
+.carousel-control-prev-icon {
+  background: url(../images/icons/ico-arrow-left.svg) center no-repeat;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1541,6 +1575,11 @@ input, textarea {
 
 @media (max-width: 600px) {
 
+  .header-bg {
+    background: url(../images/pictures/mobile-00.png) center no-repeat;
+    background-size: 100% 100%;
+  }
+
   .header-content {
     padding-top: 20rem;
   }
@@ -1734,11 +1773,12 @@ input, textarea {
   }
 
   .project-introduction h3 {
+    margin-top: 2rem;
     font-size: 2rem;
   }
 
   .project-description h2 {
-    font-size: 4.25rem;
+    font-size: 2.25rem;
   }
 
   .project-list {
@@ -1752,6 +1792,7 @@ input, textarea {
 
   .novo-residence .project-title {
     background: url(../images/pictures/mobile-05.png) center no-repeat;
+    background-size: 100% 100%;
   }
 
   .project-introduction {
@@ -1764,11 +1805,11 @@ input, textarea {
   }
 
   .project {
-    background: linear-gradient(180deg, #25282A 40%, #FFF 40%);
+    background: linear-gradient(180deg, #25282A 30%, #FFF 30%);
   }
 
   .details-container {
-    padding-top: 25rem;
+    padding-top: 19rem;
   }
 
   .blueprint h2 {
@@ -1785,10 +1826,19 @@ input, textarea {
 
   .jabuticabeira .project-title {
     background: url(../images/pictures/mobile-15.png) center no-repeat;
+    background-size: 100% 100%;
   }
 
   .view .project-title {
     background: url(../images/pictures/mobile-12.png) center no-repeat;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev {
+    left: 0;
   }
 
   [data-scroll="animation"] {

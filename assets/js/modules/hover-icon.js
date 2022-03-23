@@ -1,6 +1,6 @@
 export default function initHoverIcon() {
   const iconInstagram = document.getElementById('instagram');
-  const iconLinkedin = document.getElementById('linkedin');
+  const iconLinkedin = document.getElementById('whatsapp');
 
   iconInstagram.addEventListener('mouseover', onMouseOverIg);
   iconLinkedin.addEventListener('mouseover', onMouseOverLn);
@@ -19,14 +19,14 @@ export default function initHoverIcon() {
 
   function onMouseOverLn() {
     
-    iconLinkedin.src = 'assets/images/icons/icon-linkedin-orange.svg';
+    iconLinkedin.src = 'assets/images/icons/ico-whatsapp-orange.svg';
   
     onMouseLeaveLn.element = iconLinkedin;
     iconLinkedin.addEventListener('mouseleave', onMouseLeaveLn);
   }
   
   function onMouseLeaveLn() {
-    iconLinkedin.src = 'assets/images/icons/icon-linkedin.svg';
+    iconLinkedin.src = 'assets/images/icons/ico-whatsapp.svg';
   }
 }
 

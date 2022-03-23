@@ -8,7 +8,7 @@ export default function initScrollSmooth() {
   
     section.scrollIntoView({
       behavior: 'smooth',
-      block: 'nearest',
+      block: 'start',
       inline: 'nearest',
     });
   }
