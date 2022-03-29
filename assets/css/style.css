@@ -1585,6 +1585,10 @@ input, textarea {
     background-size: 100% 100%;
   }
 
+  .header-nav-content {
+    flex-wrap: nowrap;
+  }
+
   .header-content {
     padding-top: 20rem;
   }
