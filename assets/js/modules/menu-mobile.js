@@ -1,6 +1,7 @@
 export default function initMenuMobile() {
-  const menuButton = document.querySelector('[data-menu="button"');
-  const menuList = document.querySelector('[data-menu="list"');
+  const menuButton = document.querySelector('[data-menu="button"]');
+  const menuList = document.querySelector('[data-menu="list"]');
+  const menuListItems = document.querySelectorAll('[data-menu="list"] li');
   const eventos = ['click'];
 
   function outsideClick(element, events, callback) {
@@ -26,14 +27,22 @@ export default function initMenuMobile() {
   }
 
   if(menuButton) {
+    function closeMenu() {
+      menuButton.classList.remove('active');
+      menuList.classList.remove('active');
+    }
     function openMenu() {
       menuList.classList.add('active');
       menuButton.classList.add('active');
       outsideClick(menuList, eventos, () => {
-        menuList.classList.remove('active');
-        menuButton.classList.remove('active');
+        closeMenu();
       })
     }
-    eventos.forEach(() => menuButton.addEventListener('click', openMenu))
+    menuListItems.forEach((item) => {
+      item.addEventListener('click', closeMenu);
+    })
+    eventos.forEach(() => {
+      menuButton.addEventListener('click', openMenu);
+    })
   }
 }
