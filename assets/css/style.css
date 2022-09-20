@@ -460,7 +460,7 @@ p {
 
 .slideshow-bg.slideshow-3 {
   grid-column: 1 / 4;
-  background: url(../images/pictures/pht-06.png) center no-repeat;
+  background: url(../images/pictures/pht-36.png) center no-repeat;
   background-size: 100% 100%;
 }
 
@@ -1315,7 +1315,7 @@ input, textarea {
 ================================================================== */
 
 .view .project-title {
-  background: url(../images/pictures/pht-20.png) center no-repeat;
+  background: url(../images/pictures/pht-36.png) center no-repeat;
 }
 
 /* ==================================================================
@@ -1544,17 +1544,17 @@ input, textarea {
   }
 
   .slideshow-bg.slideshow-1 {
-    background: url(../images/pictures/slideshow-fke-tablet-01.png) center no-repeat;
+    background: url(../images/pictures/mobile-01.png) center no-repeat;
     background-size: 100% 100%;
   }
 
   .slideshow-bg.slideshow-2 {
-    background: url(../images/pictures/slideshow-fke-tablet-02.png) center no-repeat;
+    background: url(../images/pictures/mobile-02.png) center no-repeat;
     background-size: 100% 100%;
   }
 
   .slideshow-bg.slideshow-3 {
-    background: url(../images/pictures/slideshow-fke-tablet-03.png) center no-repeat;
+    background: url(../images/pictures/mobile-03.png) center no-repeat;
     background-size: 100% 100%;
   }
 
@@ -1843,7 +1843,8 @@ input, textarea {
   }
 
   .view .project-title {
-    background: url(../images/pictures/mobile-12.png) center no-repeat;
+    background: url(../images/pictures/mobile-06.png) center no-repeat;
+    background-size: 100% 100%;
   }
 
   .carousel-control-next {
