@@ -681,6 +681,8 @@ p {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
   gap: 1rem;
 }
 
